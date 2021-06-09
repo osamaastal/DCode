@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="@dimen/_4dp"
+    android:layout_marginHorizontal="@dimen/_6dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<!--    <View-->
+<!--        android:id="@+id/border"-->
+<!--        android:layout_width="@dimen/_21dp"-->
+<!--        android:layout_height="@dimen/_21dp"-->
+<!--        android:background="@drawable/bg_circle_trans_yellowstroke"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"/>-->
+<!--    <de.hdodenhof.circleimageview.CircleImageView-->
+<!--        android:id="@+id/colorImg"-->
+<!--        android:layout_width="@dimen/_15dp"-->
+<!--        android:layout_height="@dimen/_15dp"-->
+<!--        android:src="@color/trans"-->
+<!--        app:layout_constraintTop_toTopOf="@id/border"-->
+<!--        app:layout_constraintBottom_toBottomOf="@id/border"-->
+<!--        app:layout_constraintStart_toStartOf="@id/border"-->
+<!--        app:layout_constraintEnd_toEndOf="@id/border"/>-->
+
+    <TextView
+        android:id="@+id/colorTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/text_black_app_regular_12"
+        android:layout_marginStart="@dimen/_6dp"/>
+
+</LinearLayout>

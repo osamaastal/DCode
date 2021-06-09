@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/main_color"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_splash_bg"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_marginHorizontal="@dimen/_16dp"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <ImageButton
+                android:id="@+id/backBtn"
+                android:layout_width="@dimen/_45dp"
+                android:layout_height="@dimen/_45dp"
+                android:background="@drawable/bg_circle_white"
+                android:src="@drawable/ic_back"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/menuBtn"
+                android:layout_width="@dimen/_28dp"
+                android:layout_height="@dimen/_28dp"
+                android:background="@drawable/bg_circle_white"
+                android:src="@drawable/ic_menu"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_16dp"
+            android:layout_marginTop="@dimen/_8dp"
+            android:gravity="center_vertical"
+            app:layout_constraintTop_toBottomOf="@id/header">
+
+            <TextView
+                style="@style/text_black_app_bold_20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/order" />
+
+            <TextView
+                style="@style/text_black_app_bold_20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8dp"
+                android:text="#896759" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/orderStatusTv"
+                style="@style/text_yellow_regular_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_req_black_r4"
+                android:drawablePadding="6dp"
+                android:paddingHorizontal="@dimen/_10dp"
+                android:paddingVertical="@dimen/_5dp"
+                android:text="@string/pending"
+                app:drawableStartCompat="@drawable/ic_timer" />
+        </LinearLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/_16dp"
+            android:background="@drawable/bg_req_white_r20top"
+            android:fillViewport="true"
+            app:layout_constraintBottom_toTopOf="@+id/linearMsg"
+            app:layout_constraintTop_toBottomOf="@id/linear">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/_20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_45dp"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/_16dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_req_black_r8top"
+                        android:paddingVertical="@dimen/_10dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="@dimen/_12dp"
+                            android:src="@drawable/ic_logo_yellow" />
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/text_black_app_regular_12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_req_gray_r8bottom"
+                        android:paddingHorizontal="@dimen/_12dp"
+                        android:paddingVertical="@dimen/_12dp"
+                        android:text="@string/you_order_is_received_successfully_we_are_working_to_get_best_offer_for_you" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginVertical="@dimen/_24dp"
+                    android:layout_marginEnd="@dimen/_45dp"
+                    android:background="@drawable/bg_req_grayf5_r8">
+                    <!--                    TODO put map here-->
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_16dp"
+                        android:paddingHorizontal="@dimen/_16dp"
+                        android:layout_marginBottom="@dimen/_4dp">
+
+                        <ImageView
+                            android:id="@+id/productImg"
+                            android:layout_width="@dimen/_50dp"
+                            android:layout_height="@dimen/_50dp"
+                            android:scaleType="fitCenter"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/productNameTv"
+                            style="@style/text_black_app_medium_12"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10dp"
+                            android:maxLines="2"
+                            android:text="Apple Iphone SE  A32341 Apple Iphone SE "
+                            app:layout_constraintBottom_toTopOf="@id/productColor"
+                            app:layout_constraintStart_toEndOf="@id/productImg"
+                            app:layout_constraintTop_toTopOf="@id/productImg" />
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/productColor"
+                            android:layout_width="@dimen/_8dp"
+                            android:layout_height="@dimen/_8dp"
+                            android:src="@color/graye0"
+                            app:layout_constraintBottom_toBottomOf="@id/productImg"
+                            app:layout_constraintStart_toStartOf="@id/productNameTv"
+                            app:layout_constraintTop_toBottomOf="@id/productNameTv" />
+
+                        <TextView
+                            style="@style/text_black_app_regular_10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8dp"
+                            android:text="Red Edition"
+                            app:layout_constraintBottom_toBottomOf="@id/productColor"
+                            app:layout_constraintStart_toEndOf="@id/productColor"
+                            app:layout_constraintTop_toTopOf="@id/productColor" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/grayea"
+                        android:layout_marginVertical="@dimen/_8dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/date_amp_time"
+                        android:layout_marginHorizontal="@dimen/_12dp"
+                        style="@style/text_black_app_regular_12"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Wensday 14 Jan 2021"
+                        style="@style/text_black_app_simibold_12"
+                        android:layout_marginHorizontal="@dimen/_12dp"
+                        android:layout_marginTop="@dimen/_8dp"
+                        />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/grayea"
+                        android:layout_marginVertical="@dimen/_8dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/identified_problem"
+                        android:layout_marginHorizontal="@dimen/_12dp"
+                        style="@style/text_black_app_regular_12"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Screen replacement, Housing,Back Camera "
+                        style="@style/text_black_app_simibold_12"
+                        android:layout_marginHorizontal="@dimen/_12dp"
+                        android:layout_marginTop="@dimen/_8dp"
+                        />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/grayea"
+                        android:layout_marginVertical="@dimen/_8dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/new_parts"
+                        android:layout_marginHorizontal="@dimen/_12dp"
+                        style="@style/text_black_app_regular_12"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Screen replacement, Housing,Back Camera "
+                        style="@style/text_black_app_simibold_12"
+                        android:layout_marginHorizontal="@dimen/_12dp"
+                        android:layout_marginTop="@dimen/_8dp"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_38dp"
+                        android:text="@string/details"
+                        style="@style/text_black_app_regular_14"
+                        android:gravity="center"
+                        android:layout_marginTop="@dimen/_12dp"
+                        android:background="@drawable/bg_req_yellow_r8bottom"/>
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/RVChat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:listitem="@layout/row_chat_msg_reciever"
+                    tools:itemCount="5"
+                    />
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+        <LinearLayout
+            android:id="@+id/linearMsg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_85dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/bg_req_black_r12top"
+                android:paddingHorizontal="@dimen/_16dp"
+                app:layout_constraintBottom_toBottomOf="parent">
+                <EditText
+                    android:id="@+id/msgEt"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="@dimen/_12dp"
+                    android:paddingHorizontal="@dimen/_13dp"
+                    android:hint="@string/enter_your_message"
+                    android:textColorHint="#B5B5B5"
+                    style="@style/text_black_app_regular_12"
+                    android:background="@drawable/bg_req_grayf5_r24"
+                    />
+                <ImageButton
+                    android:id="@+id/sendBtn"
+                    android:layout_width="@dimen/_40dp"
+                    android:layout_height="@dimen/_40dp"
+                    android:background="@drawable/bg_circle_yellow"
+                    android:layout_marginStart="@dimen/_10dp"
+                    android:src="@drawable/ic_chat"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

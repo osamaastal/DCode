@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginHorizontal="@dimen/_20dp"
+    android:layout_marginVertical="@dimen/_10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/device_selected"
+            style="@style/text_gray90_regular_12"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="iPhone X 12 pro max"
+            style="@style/text_white_medium_12"
+            android:drawablePadding="@dimen/_12dp"
+            app:drawableStartCompat="@drawable/ic_phone"
+            android:layout_marginTop="@dimen/_5dp"
+            android:layout_marginEnd="@dimen/_30dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/problems_were_selected"
+            style="@style/text_gray90_regular_12"
+            android:layout_marginTop="@dimen/_20dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Screen Replacement, Housing.."
+            style="@style/text_white_medium_12"
+            android:drawablePadding="@dimen/_10dp"
+            app:drawableStartCompat="@drawable/ic_repare_big"
+            android:layout_marginTop="@dimen/_5dp"
+            android:drawableTint="@color/white"
+            tools:ignore="UseCompatTextViewDrawableXml" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/selected_parts"
+            style="@style/text_gray90_regular_12"
+            android:layout_marginTop="@dimen/_20dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Full Screen, Housing body.."
+            style="@style/text_white_medium_12"
+            android:drawablePadding="@dimen/_8dp"
+            app:drawableStartCompat="@drawable/ic_info_big"
+            android:layout_marginTop="@dimen/_5dp"
+            android:drawableTint="@color/white"
+            tools:ignore="UseCompatTextViewDrawableXml" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1dp"
+            android:background="@color/gray65"
+            android:layout_marginTop="@dimen/_20dp"/>
+    </LinearLayout>
+    <ImageButton
+        android:layout_width="@dimen/_30dp"
+        android:layout_height="@dimen/_30dp"
+        android:src="@drawable/ic_delete"
+        android:background="@drawable/bg_circle_trans_yellowstroke"
+        android:tint="@color/main_color"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

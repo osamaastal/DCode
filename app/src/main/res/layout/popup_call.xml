@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_320dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_req_white_r10"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/_35dp"
+        android:gravity="center_horizontal"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Abdurahman  alghamdi"
+            style="@style/text_black_app_medium_12"
+            android:layout_marginTop="@dimen/_47dp"
+            android:gravity="center_horizontal"
+            android:layout_marginHorizontal="@dimen/_16dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+966 054 1234567"
+            style="@style/text_black_app_regular_10"
+            app:drawableStartCompat="@drawable/ic_call"
+            android:drawablePadding="@dimen/_5dp"
+            android:layout_marginTop="@dimen/_10dp"/>
+        <android.widget.Button
+            android:id="@+id/callBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_38dp"
+            android:text="@string/call"
+            style="@style/text_black_app_regular_14"
+            android:background="@drawable/bg_btn_main"
+            android:layout_marginHorizontal="@dimen/hs"
+            android:layout_marginTop="@dimen/_16dp"
+            android:layout_marginBottom="@dimen/_24dp"
+            android:paddingHorizontal="@dimen/_45dp"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="@dimen/_70dp"
+        android:layout_height="@dimen/_70dp"
+        app:civ_border_color="@color/main_color"
+        app:civ_border_width="@dimen/_1dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@color/trans"
+        app:civ_circle_background_color="@color/grayf5"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

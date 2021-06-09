@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="OyaCircleImageView">
+        <attr name="oya_border_width" format="dimension" />
+        <attr name="oya_border_color" format="color" />
+        <attr name="oya_border_overlay" format="boolean" />
+        <attr name="oya_fill_color" format="color" />
+        <attr name="oya_circle_background_color" format="color" />
+    </declare-styleable>
+    <declare-styleable name="OyaRateBar">
+        <attr name="oya_test_color" format="color" />
+        <attr name="oya_test_size" format="dimension" />
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".ui.a_main.MainActivity">
+
+        <fragment
+            android:id="@+id/navHostFragment"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:defaultNavHost="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:navGraph="@navigation/nav"
+            android:layout_marginBottom="@dimen/_70dp"
+            />
+        <LinearLayout
+            android:id="@+id/bottomNav"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:paddingHorizontal="0dp"
+            android:elevation="5dp"
+            android:background="@drawable/bg_req_black_r12top"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <LinearLayout
+                android:id="@+id/layHome"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginVertical="5dp"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/homeIv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_bnav_home" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layCart"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginEnd="30dp"
+                android:layout_marginVertical="5dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="@dimen/_18dp"
+                    android:layout_height="@dimen/_18dp"
+                    android:gravity="center"
+                    android:text="5"
+                    android:layout_marginStart="@dimen/_10dp"
+                    android:layout_marginBottom="-8dp"
+                    style="@style/text_black_app_regular_10"
+                    android:elevation="@dimen/_1dp"
+                    android:visibility="gone"
+                    android:background="@drawable/bg_circle_yellow_blackstroke"/>
+                <ImageView
+                    android:id="@+id/cartIv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_cart_big" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layOrders"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginVertical="5dp"
+                android:orientation="vertical"
+                android:layout_marginStart="30dp">
+
+                <ImageView
+                    android:id="@+id/orderIv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_bnav_orders" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layMore"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginVertical="5dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/moreIv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_bnav_more"  />
+            </LinearLayout>
+
+        </LinearLayout>
+        <ImageButton
+            android:id="@+id/mainBtn"
+            android:layout_width="@dimen/_50dp"
+            android:layout_height="@dimen/_50dp"
+            android:src="@drawable/ic_bnav_btn"
+            android:elevation="@dimen/_5dp"
+            app:layout_constraintBottom_toBottomOf="@id/bottomNav"
+            app:layout_constraintTop_toTopOf="@id/bottomNav"
+            app:layout_constraintStart_toStartOf="@id/bottomNav"
+            app:layout_constraintEnd_toEndOf="@id/bottomNav"
+            android:background="@drawable/bg_circle_white"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_320dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingVertical="@dimen/_10dp"
+    android:paddingHorizontal="@dimen/hs"
+    android:background="@drawable/bg_req_white_r10">
+    <TextView
+        android:id="@+id/msgTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/text_black_app_medium_12"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_10dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.widget.Button
+            android:id="@+id/okBtn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:text="@string/ok"
+            style="@style/text_white_bold_16"
+            android:background="@drawable/bg_btn_main"
+            android:layout_marginTop="@dimen/_20dp"
+            android:layout_marginBottom="10dp"
+            android:textAllCaps="false"
+            android:gravity="center"
+            android:layout_marginEnd="@dimen/_5dp"/>
+        <android.widget.Button
+            android:id="@+id/cancelBtn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:text="Cancel"
+            style="@style/text_white_bold_16"
+            android:background="@drawable/bg_btn_main"
+            android:layout_marginTop="@dimen/_20dp"
+            android:layout_marginBottom="10dp"
+            android:textAllCaps="false"
+            android:gravity="center"
+            android:layout_marginStart="@dimen/_5dp"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

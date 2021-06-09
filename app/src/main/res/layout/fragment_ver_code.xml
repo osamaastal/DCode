@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/main_color"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_splash_bg"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_marginHorizontal="@dimen/_16dp"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageButton
+                android:id="@+id/backBtn"
+                android:layout_width="@dimen/_45dp"
+                android:layout_height="@dimen/_45dp"
+                android:src="@drawable/ic_back"
+                android:background="@drawable/bg_circle_white"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/_10dp"
+            android:background="@drawable/bg_req_white_r20top"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/_24dp"
+            android:paddingVertical="@dimen/_24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/header">
+
+            <TextView
+                style="@style/text_black_app_bold_20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/phone_verification" />
+
+            <TextView
+                style="@style/text_gray65_regular_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_4dp"
+                android:text="@string/please_enter_the_4_digit_code_send_to_you_at" />
+            <TextView
+                android:id="@+id/phoneTv"
+                style="@style/text_black_app_bold_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_4dp"/>
+
+            <com.chaos.view.PinView
+                android:id="@+id/pinView"
+                style="@style/PinWidget.PinView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:cursorVisible="true"
+                android:inputType="number"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:shadowColor="@color/main_color"
+                android:fontFamily="@font/poppins_bold"
+                app:cursorColor="@color/main_color"
+                app:cursorWidth="2dp"
+                app:hideLineWhenFilled="false"
+                app:itemCount="4"
+                app:itemHeight="@dimen/_50dp"
+                app:itemWidth="@dimen/_50dp"
+                app:itemRadius="4dp"
+                app:itemSpacing="@dimen/_10dp"
+                app:lineColor="#CECED0"
+                app:lineWidth="0.5dp"
+                app:viewType="rectangle"
+                android:itemBackground="@color/graye0"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center_horizontal"
+                android:digits="0123456789"/>
+            <LinearLayout
+                android:id="@+id/linearResend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/_20dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/did_not_receive_yet"
+                    style="@style/text_black_app_regular_12"/>
+                <TextView
+                    android:id="@+id/resendTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/resend"
+                    android:paddingVertical="@dimen/_5dp"
+                    android:paddingHorizontal="@dimen/_8dp"
+                    android:background="@drawable/bg_req_trans_lightgray"
+                    android:layout_marginStart="@dimen/_5dp"
+                    android:textColor="@color/color_selector_black"
+                    style="@style/text_black_app_bold_12"
+                    />
+            </LinearLayout>
+
+            <android.widget.Button
+                android:id="@+id/verifyBtn"
+                style="@style/text_black_app_regular_16"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50dp"
+                android:layout_marginTop="@dimen/_16dp"
+                android:layout_marginBottom="@dimen/_16dp"
+                android:background="@drawable/bg_btn_main"
+                android:text="@string/verify"
+                android:textAllCaps="false" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

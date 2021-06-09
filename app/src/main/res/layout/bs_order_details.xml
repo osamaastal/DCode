@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_req_white_r20top"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/hs"
+    app:layout_behavior="@string/bottom_sheet_behavior">
+
+    <View
+        android:layout_width="@dimen/_50dp"
+        android:layout_height="@dimen/_6dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_12dp"
+        android:background="@drawable/bg_req_grayf5_r4" />
+    <include
+        android:id="@+id/orderDetailsInclude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/view_order_details"
+        android:layout_marginTop="@dimen/_16dp"
+        android:layout_marginBottom="@dimen/_20dp"/>
+</LinearLayout>

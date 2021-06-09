@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/main_color"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_splash_bg"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:layout_marginHorizontal="@dimen/_16dp"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/terms_and_conditions"
+                style="@style/text_black_app_bold_14"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                />
+            <ImageButton
+                android:id="@+id/backBtn"
+                android:layout_width="@dimen/_45dp"
+                android:layout_height="@dimen/_45dp"
+                android:src="@drawable/ic_back"
+                android:background="@drawable/bg_circle_white"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/_10dp"
+            android:background="@drawable/bg_req_white_r20top"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/header"
+            android:fillViewport="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vulputate hac ultrices pellentesque diam velit lorem ac. Nibh faucibus congue a ipsum sed. Pulvinar purus aenean facilisis in ut facilisis placerat interdum. Neque in non est pellentesque sed porta feugiat orci, dictum. Fringilla convallis gravida in praesent integer aliquam amet proin.
+Pellentesque vulputate sit tortor, risus eget ut interdum duis. Diam rutrum ultrices placerat suspendisse aliquet augue. Nisi commodo massa morbi posuere mauris libero. Tristique lectus fermentum, vitae nisl semper. Blandit morbi interdum eu quis lacus nec. Ut pellentesque viverra vitae volutpat nisl a massa diam. Eget suspendisse donec non lectus sed convallis. Amet, accumsan turpis nam sem vitae morbi enim massa amet. Sed vulputate scelerisque vitae vel dis integer nisl pretium. Accumsan aliquam enim, viverra tristique nunc sagittis. Sed vel adipiscing quis vehicula ac lacinia in. Sem diam quis ante lacinia purus.
+Ut volutpat augue non molestie. Lectus aliquam turpis senectus bibendum curabitur nibh ut habitant eu. Duis consequat scelerisque lobortis donec cras quis amet. Lorem scelerisque urna, ut ultricies feugiat. Aliquam nec tortor, odio dolor gravida phasellus vestibulum. Et sagittis, cursus fames sagittis turpis orci arcu. Consequat elementum, fringilla lacus, sed lacus. Nibh porttitor erat feugiat ac sit elit, proin. Nec lacus, leo proin sem. Mauris in eu sed velit adipiscing platea lacinia. Molestie morbi pellentesque neque, egestas semper hendrerit iaculis aliquet. Ut orci volutpat ultrices eget eget volutpat nulla.
+Quam et vulputate urna duis vulputate accumsan. Arcu fames amet at quam pulvinar eget fermentum ullamcorper. Ultricies est velit dictum erat neque donec tincidunt amet. Quis porta turpis dolor ut sed. Dolor non laoreet mauris, facilisis in scelerisque enim. Sem laoreet purus dolor porttitor a, elementum, quam. Nunc egestas diam suspendisse urna ut massa nulla. A donec vel fermentum maecenas eget duis feugiat.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vulputate hac ultrices pellentesque diam velit lorem ac. Nibh faucibus congue a ipsum sed. Pulvinar purus aenean facilisis in ut facilisis placerat interdum. Neque in non est pellentesque sed porta feugiat orci, dictum. Fringilla convallis gravida in praesent integer aliquam amet proin.
+Pellentesque vulputate sit tortor, risus eget ut interdum duis. Diam rutrum ultrices placerat suspendisse aliquet augue. Nisi commodo massa morbi posuere mauris libero. Tristique lectus fermentum, vitae nisl semper. Blandit morbi interdum eu quis lacus nec. Ut pellentesque viverra vitae volutpat nisl a massa diam. Eget suspendisse donec non lectus sed convallis. Amet, accumsan turpis nam sem vitae morbi enim massa amet. Sed vulputate scelerisque vitae vel dis integer nisl pretium. Accumsan aliquam enim, viverra tristique nunc sagittis. Sed vel adipiscing quis vehicula ac lacinia in. Sem diam quis ante lacinia purus.
+Ut volutpat augue non molestie. Lectus aliquam turpis senectus bibendum curabitur nibh ut habitant eu. Duis consequat scelerisque lobortis donec cras quis amet. Lorem scelerisque urna, ut ultricies feugiat. Aliquam nec tortor, odio dolor gravida phasellus vestibulum. Et sagittis, cursus fames sagittis turpis orci arcu. Consequat elementum, fringilla lacus, sed lacus. Nibh porttitor erat feugiat ac sit elit, proin. Nec lacus, leo proin sem. Mauris in eu sed velit adipiscing platea lacinia. Molestie morbi pellentesque neque, egestas semper hendrerit iaculis aliquet. Ut orci volutpat ultrices eget eget volutpat nulla.
+Quam et vulputate urna duis vulputate accumsan. Arcu fames amet at quam pulvinar eget fermentum ullamcorper. Ultricies est velit dictum erat neque donec tincidunt amet. Quis porta turpis dolor ut sed. Dolor non laoreet mauris, facilisis in scelerisque enim. Sem laoreet purus dolor porttitor a, elementum, quam. Nunc egestas diam suspendisse urna ut massa nulla. A donec vel fermentum maecenas eget duis feugiat. at quam pulvinar eget fermentum ullamcorper. Ultricies est velit dictum erat neque donec tincidunt amet. Quis porta turpis dolor ut sed. Dolor non laoreet mauris, facilisis in scelerisque enim. Sem laoreet purus dolor porttitor a, elementum, quam. Nunc egestas diam suspendisse urna ut massa nulla. A donec vel fermentum maecenas eget duis feugiat."
+                    android:layout_marginBottom="@dimen/_20dp"
+                    style="@style/text_black_app_regular_12"
+                    android:layout_marginHorizontal="@dimen/_20dp"
+                    android:layout_marginTop="@dimen/_10dp"
+                    />
+            </LinearLayout>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

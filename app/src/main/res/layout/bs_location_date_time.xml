@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bg_req_black_r12top"
+    android:orientation="vertical"
+    app:layout_behavior="@string/bottom_sheet_behavior">
+
+    <View
+        android:layout_width="@dimen/_50dp"
+        android:layout_height="@dimen/_6dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_12dp"
+        android:background="@drawable/bg_req_gray55_r4" />
+
+    <TextView
+        style="@style/text_white_regular_12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_18dp"
+        android:text="@string/location"
+        android:layout_marginHorizontal="@dimen/hs"/>
+    <EditText
+        android:id="@+id/locationEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="@dimen/_12dp"
+        android:paddingHorizontal="@dimen/_13dp"
+        android:hint="Pick location"
+        android:textColorHint="#979797"
+        style="@style/text_black_app_regular_12"
+        android:background="@drawable/bg_req_gray40_r4"
+        android:layout_marginTop="@dimen/_12dp"
+        android:drawableEnd="@drawable/ic_location"
+        android:layout_marginHorizontal="@dimen/hs"
+        />
+
+    <TextView
+        style="@style/text_white_regular_12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_18dp"
+        android:text="@string/date"
+        android:layout_marginBottom="@dimen/_8dp"
+        android:layout_marginHorizontal="@dimen/hs"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RVDates"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:itemCount="10"
+        tools:listitem="@layout/row_date"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:orientation="horizontal"
+        android:layout_marginStart="@dimen/_10dp"
+        />
+    <TextView
+        style="@style/text_white_regular_12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_18dp"
+        android:text="@string/time"
+        android:layout_marginBottom="@dimen/_8dp"
+        android:layout_marginHorizontal="@dimen/hs"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RVTimes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:itemCount="10"
+        tools:listitem="@layout/row_date"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:orientation="horizontal"
+        android:layout_marginStart="@dimen/_10dp"
+        />
+
+    <android.widget.Button
+        android:id="@+id/cancelBtn"
+        style="@style/text_black_app_regular_16"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45dp"
+        android:layout_marginTop="@dimen/_20dp"
+        android:layout_marginBottom="@dimen/_15dp"
+        android:background="@drawable/bg_btn_main"
+        android:text="@string/confirm"
+        android:textAllCaps="false"
+        android:layout_marginHorizontal="@dimen/hs"/>
+</LinearLayout>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@+id/home2">
+
+<!--    app:startDestination="@id/mainActivity2"-->
+
+<!--    <fragment-->
+<!--        android:id="@+id/addProdctFragment"-->
+<!--        android:name="com.app.ab.mobilecashier.ui.fragment.addprodct.AddProdctFragment"-->
+<!--        android:label="fragment_add_prodct"-->
+<!--        tools:layout="@layout/fragment_add_prodct" >-->
+<!--        <action-->
+<!--            android:id="@+id/action_addProdctFragment_to_scanFragment"-->
+<!--            app:destination="@id/scanFragment" />-->
+<!--        <argument-->
+<!--            android:name="idcode"-->
+<!--            app:argType="string"-->
+<!--            android:defaultValue="0" />-->
+<!--        <action-->
+<!--            android:id="@+id/action_addProdctFragment_to_detailsProdctFragment"-->
+<!--            app:destination="@id/detailsProdctFragment"-->
+<!--            app:popUpTo="@+id/scanFragment"/>-->
+<!--    </fragment>-->
+
+
+
+
+
+<!--    <fragment-->
+<!--        android:id="@+id/requestsProgressFragment"-->
+<!--        android:name="com.app.ab.mobilecashier.ui.fragment.RequestsProgressFragment"-->
+<!--        android:label="fragment_requests_progress"-->
+<!--        tools:layout="@layout/fragment_requests_progress" />-->
+<!--    <fragment-->
+<!--        android:id="@+id/requestsFragment"-->
+<!--        android:name="com.app.ab.mobilecashier.ui.fragment.RequestsFragment"-->
+<!--        android:label="fragment_requests"-->
+<!--        tools:layout="@layout/fragment_requests" />-->
+<!--    <fragment-->
+<!--        android:id="@+id/rejectedRequestsFragment"-->
+<!--        android:name="com.app.ab.mobilecashier.ui.fragment.RejectedRequestsFragment"-->
+<!--        android:label="fragment_rejected_requests"-->
+<!--        tools:layout="@layout/fragment_rejected_requests" />-->
+<!--    <fragment-->
+<!--        android:id="@+id/completedRequestsFragment"-->
+<!--        android:name="com.app.ab.mobilecashier.ui.fragment.CompletedRequestsFragment"-->
+<!--        android:label="fragment_completed_requests"-->
+<!--        tools:layout="@layout/fragment_completed_requests" />-->
+<!--    ************************************************-->
+<!--    <activity-->
+<!--        android:id="@+id/loginActivity"-->
+<!--        android:name="com.oya.doubleq_client.ui.a_login.LoginActivity"-->
+<!--        android:label="LoginActivity"-->
+<!--        tools:layout="@layout/activity_login"/>-->
+<!--    <activity-->
+<!--        android:id="@+id/mainActivity2"-->
+<!--        android:name="com.oya.doubleq_client.ui.a_main.MainActivity"-->
+<!--        android:label="MainActivity"-->
+<!--        tools:layout="@layout/activity_main">-->
+
+<!--        <action-->
+<!--            android:id="@+id/action_mainActivity2_to_home2"-->
+<!--            app:destination="@id/home2"-->
+<!--            app:enterAnim="@anim/fragment_fade_enter"-->
+<!--            app:exitAnim="@anim/fragment_fade_exit"-->
+<!--            app:popEnterAnim="@anim/fragment_fade_enter"-->
+<!--            app:popExitAnim="@anim/fragment_fade_exit" />-->
+<!--        <action-->
+<!--            android:id="@+id/action_mainActivity2_to_cart"-->
+<!--            app:destination="@id/cart"-->
+<!--            app:enterAnim="@anim/fragment_fade_enter"-->
+<!--            app:exitAnim="@anim/fragment_fade_exit"-->
+<!--            app:popEnterAnim="@anim/fragment_fade_enter"-->
+<!--            app:popExitAnim="@anim/fragment_fade_exit" />-->
+<!--        <action-->
+<!--            android:id="@+id/action_mainActivity2_to_orders"-->
+<!--            app:destination="@id/orders"-->
+<!--            app:enterAnim="@anim/fragment_fade_enter"-->
+<!--            app:exitAnim="@anim/fragment_fade_exit"-->
+<!--            app:popEnterAnim="@anim/fragment_fade_enter"-->
+<!--            app:popExitAnim="@anim/fragment_fade_exit" />-->
+<!--        <action-->
+<!--            android:id="@+id/action_mainActivity2_to_more"-->
+<!--            app:destination="@id/more"-->
+<!--            app:enterAnim="@anim/fragment_fade_enter"-->
+<!--            app:exitAnim="@anim/fragment_fade_exit"-->
+<!--            app:popEnterAnim="@anim/fragment_fade_enter"-->
+<!--            app:popExitAnim="@anim/fragment_fade_exit" />-->
+<!--    </activity>-->
+    <fragment
+        android:id="@+id/home2"
+        android:name="com.oya.doubleq_client.ui.home.Home"
+        android:label="Home"
+        tools:layout="@layout/fragment_home">
+<!--        <action-->
+<!--            android:id="@+id/action_home2_to_cart"-->
+<!--            app:destination="@id/cart" />-->
+    </fragment>
+    <fragment
+        android:id="@+id/cart"
+        android:name="com.oya.doubleq_client.ui.cart.Cart"
+        android:label="Cart"
+        tools:layout="@layout/fragment_cart">
+<!--        <action-->
+<!--            android:id="@+id/action_cart_to_orders"-->
+<!--            app:destination="@id/orders" />-->
+    </fragment>
+    <fragment
+        android:id="@+id/orders"
+        android:name="com.oya.doubleq_client.ui.orders.Orders"
+        android:label="Orders"
+        tools:layout="@layout/fragment_orders">
+<!--        <action-->
+<!--            android:id="@+id/action_orders_to_more"-->
+<!--            app:destination="@id/more" />-->
+    </fragment>
+    <fragment
+        android:id="@+id/more"
+        android:name="com.oya.doubleq_client.ui.more.More"
+        android:label="More"
+        tools:layout="@layout/fragment_more">
+        <action
+            android:id="@+id/action_more_to_FAQ"
+            app:destination="@id/FAQ" />
+        <action
+            android:id="@+id/action_more_to_aboutUs"
+            app:destination="@id/aboutUs" />
+        <action
+            android:id="@+id/action_more_to_contactUs"
+            app:destination="@id/contactUs" />
+        <action
+            android:id="@+id/action_more_to_favorites"
+            app:destination="@id/favorites" />
+        <action
+            android:id="@+id/action_more_to_notifications"
+            app:destination="@id/notifications" />
+        <action
+            android:id="@+id/action_more_to_profile"
+            app:destination="@id/profile" />
+        <action
+            android:id="@+id/action_more_to_warranties"
+            app:destination="@id/warranties" />
+    </fragment>
+    <fragment
+        android:id="@+id/warranties"
+        android:name="com.oya.doubleq_client.ui.warranties.Warranties"
+        android:label="Warranties"
+        tools:layout="@layout/fragment_warranties"/>
+    <fragment
+        android:id="@+id/favorites"
+        android:name="com.oya.doubleq_client.ui.favorites.Favorites"
+        android:label="Favorites"
+        tools:layout="@layout/fragment_favorites"/>
+    <fragment
+        android:id="@+id/aboutUs"
+        android:name="com.oya.doubleq_client.ui.about_us.AboutUs"
+        android:label="AboutUs"
+        tools:layout="@layout/fragment_about_us"/>
+    <fragment
+        android:id="@+id/contactUs"
+        android:name="com.oya.doubleq_client.ui.contact_us.ContactUs"
+        android:label="ContactUs"
+        tools:layout="@layout/fragment_contact_us"/>
+    <fragment
+        android:id="@+id/FAQ"
+        android:name="com.oya.doubleq_client.ui.faq.FAQ"
+        android:label="FAQ"
+        tools:layout="@layout/fragment_faq"/>
+    <fragment
+        android:id="@+id/notifications"
+        android:name="com.oya.doubleq_client.ui.notifications.Notifications"
+        android:label="Notifications"
+        tools:layout="@layout/fragment_notifications"/>
+    <fragment
+        android:id="@+id/profile"
+        android:name="com.oya.doubleq_client.ui.profile.Profile"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile"/>
+    <fragment
+        android:id="@+id/login"
+        android:name="com.oya.doubleq_client.ui.login.Login"
+        android:label="Login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_login_to_verCode"
+            app:destination="@id/verCode"
+            app:enterAnim="@anim/fragment_open_enter"/>
+    </fragment>
+    <fragment
+        android:id="@+id/verCode"
+        android:name="com.oya.doubleq_client.ui.ver_code.VerCode"
+        android:label="VerCode"
+        tools:layout="@layout/fragment_ver_code"/>
+    <!--    <fragment-->
+<!--        android:id="@+id/homeProducts"-->
+<!--        android:name="com.oya.doubleq_client.ui.home.HomeProducts"-->
+<!--        android:label="HomeProducts"-->
+<!--        tools:layout="@layout/fragment_home_products"/>-->
+<!--    <fragment-->
+<!--        android:id="@+id/homeRepair"-->
+<!--        android:name="com.oya.doubleq_client.ui.home.HomeRepair"-->
+<!--        android:label="HomeRepair"-->
+<!--        tools:layout="@layout/fragment_home_repair"/>-->
+
+</navigation>

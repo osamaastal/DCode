@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_req_black_r12top"
+    android:clickable="true"
+    android:elevation="10dp"
+    android:orientation="vertical"
+    android:paddingHorizontal="16dp"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="160dp"
+    app:layout_behavior="@string/bottom_sheet_behavior">
+    <View
+        android:layout_width="@dimen/_50dp"
+        android:layout_height="@dimen/_6dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_12dp"
+        android:background="@drawable/bg_req_gray55_r4" />
+    <TextView
+        style="@style/text_white_bold_20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/phone_verification"
+        android:layout_marginTop="@dimen/_25dp" />
+
+    <TextView
+        style="@style/text_white_regular_12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_4dp"
+        android:text="@string/please_enter_the_4_digit_code_send_to_your_number" />
+
+
+    <com.chaos.view.PinView
+        android:id="@+id/pinView"
+        style="@style/PinWidget.PinView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:cursorVisible="true"
+        android:digits="0123456789"
+        android:fontFamily="@font/poppins_bold"
+        android:inputType="number"
+        android:itemBackground="@color/gray65"
+        android:padding="5dp"
+        android:shadowColor="@color/main_color"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:cursorColor="@color/main_color"
+        app:cursorWidth="2dp"
+        app:hideLineWhenFilled="false"
+        app:itemCount="4"
+        app:itemHeight="@dimen/_50dp"
+        app:itemRadius="4dp"
+        app:itemSpacing="@dimen/_10dp"
+        app:itemWidth="@dimen/_50dp"
+        app:lineColor="#CECED0"
+        app:lineWidth="0.5dp"
+        app:viewType="rectangle"
+        android:layout_marginVertical="@dimen/_20dp"/>
+
+    <android.widget.Button
+        android:id="@+id/verifyBtn"
+        style="@style/text_black_app_regular_16"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50dp"
+        android:layout_marginTop="@dimen/_16dp"
+        android:layout_marginBottom="@dimen/_25dp"
+        android:background="@drawable/bg_btn_main"
+        android:text="@string/verify"
+        android:textAllCaps="false"
+        />
+
+</LinearLayout>

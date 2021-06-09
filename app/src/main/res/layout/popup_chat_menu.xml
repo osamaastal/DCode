@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="top|end"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_triangle"
+        android:layout_gravity="end"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="-1dp"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingVertical="6dp"
+        android:layout_gravity="end"
+        android:background="@drawable/bg_req_white_r4">
+        <LinearLayout
+            android:id="@+id/linearOrderDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="@dimen/_12dp"
+            android:paddingVertical="6dp"
+            android:background="@drawable/bg_req_trans_gray">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_problem"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/details"
+                style="@style/text_black_app_regular_12"
+                android:layout_marginStart="6dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearContact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="6dp"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="@dimen/_12dp"
+            android:background="@drawable/bg_req_trans_gray">
+            <ImageView
+                android:layout_width="@dimen/_13dp"
+                android:layout_height="@dimen/_13dp"
+                android:src="@drawable/ic_close"
+                android:tint="#313131"
+                tools:ignore="UseAppTint" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cancel"
+                style="@style/text_black_app_regular_12"
+                android:layout_marginStart="6dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

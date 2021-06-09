@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mobile_number"
+        style="@style/text_black_app_regular_12"/>
+    <EditText
+        android:id="@+id/phoneEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/_50dp"
+        android:hint="@string/enter_your_mobile_number"
+        style="@style/text_black_app_regular_12"
+        android:background="@drawable/bg_req_edittext"
+        android:paddingHorizontal="@dimen/_17dp"
+        android:gravity="center_vertical"
+        android:layout_marginTop="@dimen/_8dp"
+        android:inputType="phone"
+        android:textColorHint="#B5B5B5"
+        android:digits="0123456789"
+        android:maxLength="10"
+        />
+</LinearLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "584942278312",
+    "project_id": "doubleq-3e894",
+    "storage_bucket": "doubleq-3e894.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:584942278312:android:f64c3ceaa172ffe283949d",
+        "android_client_info": {
+          "package_name": "com.oya.doubleq_client"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "584942278312-34rme8s9ukh1f2ups1ijchnes1ab4hob.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDw0xcEXQJNQ0RQ_L3sf6NtQIRdI3ft_Ec"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "584942278312-34rme8s9ukh1f2ups1ijchnes1ab4hob.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

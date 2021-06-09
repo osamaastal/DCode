@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="ltr"
+    android:layout_marginVertical="@dimen/_6dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:id="@+id/msgTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="your order is accepted by the munjed Mahmoud al-ghamdi "
+        style="@style/text_black_app_regular_12"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginEnd="@dimen/_45dp"
+        android:padding="@dimen/_12dp"
+        android:background="@drawable/bg_req_grayf5_r8"/>
+    <TextView
+        android:id="@+id/timeTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="44 minutes ago"
+        style="@style/text_gray90_regular_10"
+        app:layout_constraintTop_toBottomOf="@id/msgTv"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/_5dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

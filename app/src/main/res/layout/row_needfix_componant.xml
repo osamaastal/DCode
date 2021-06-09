@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_req_grayf5_r8"
+    android:paddingHorizontal="@dimen/_12dp"
+    android:paddingVertical="@dimen/_12dp"
+    android:layout_marginVertical="@dimen/_6dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Charge socket problem (1500 SAR) include Tax"
+            style="@style/text_black_app_simibold_12"/>
+        <RadioButton
+            android:layout_width="@dimen/_16dp"
+            android:layout_height="@dimen/_16dp"
+            android:button="@drawable/button_box_black"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lore ipsum dolor sit amet, consectetur adipiscing elit. Nisl nisi, lobortis orci, nisi. Id sed laoreet habitant adipiscing fringilla. Varius quis."
+        style="@style/text_black_app_regular_12"
+        android:layout_marginTop="@dimen/_15dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10dp"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2 Years"
+            style="@style/text_black_app_regular_10"
+            android:drawablePadding="@dimen/_6dp"
+            app:drawableStartCompat="@drawable/ic_warranty"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Advanced Service"
+            style="@style/text_black_app_regular_10"
+            android:drawablePadding="@dimen/_6dp"
+            app:drawableStartCompat="@drawable/ic_service_type"
+            android:layout_marginStart="@dimen/_13dp"/>
+        <Space
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_26dp"
+            android:text="40%"
+            style="@style/text_white_regular_10"
+            android:paddingHorizontal="@dimen/_8dp"
+            android:gravity="center"
+            android:drawablePadding="@dimen/_5dp"
+            android:background="@drawable/bg_req_green_r4"
+            android:layout_marginStart="@dimen/_5dp"
+            app:drawableStartCompat="@drawable/ic_percent" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginVertical="@dimen/_10dp"
+    android:layout_marginHorizontal="@dimen/_20dp"
+    android:background="@drawable/bg_req_grayf5_r12"
+    android:paddingHorizontal="@dimen/_16dp"
+    android:paddingVertical="@dimen/_16dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+        <TextView
+            android:id="@+id/titleTv"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            style="@style/text_black_app_medium_12" />
+        <ImageButton
+            android:id="@+id/moreBtn"
+            android:layout_width="@dimen/_20dp"
+            android:layout_height="@dimen/_20dp"
+            android:src="@drawable/ic_arrow_down"
+            android:background="@drawable/bg_req_grayea_r2"
+            android:tint="@color/gray75"
+            android:layout_marginStart="@dimen/_10dp"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/detailsTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/text_gray65_regular_10"
+        android:layout_marginTop="@dimen/_8dp"
+        />
+</LinearLayout>

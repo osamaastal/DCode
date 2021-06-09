@@ -1,0 +1,667 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">-->
+<!--        &lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+<!--        <item name="colorPrimary">@color/main_color</item>-->
+<!--        <item name="colorPrimaryDark">@color/main_color</item>-->
+<!--        <item name="colorAccent">@color/black_app</item>-->
+<!--    </style>-->
+
+    <!--        **************************Spinner***************-->
+    <style name="SpinnerTheam" parent="android:Widget.Spinner">
+        <item name="android:background">@drawable/bg_spinner</item>
+    </style>
+
+    <!--    ************************** Rating Bar******************-->
+    <style name="RatingBar" parent="Widget.AppCompat.RatingBar.Indicator">
+        <item name="colorControlNormal">#959595</item>
+        <item name="colorControlActivated">#FF9C46</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:thumb">@null</item>
+        <item name="android:isIndicator">true</item>
+        <item name="fontFamily">@font/tajawal_medium</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="RatingBarTheme" parent="Theme.AppCompat">
+        <item name="colorControlNormal">#959595</item>
+        <item name="colorControlActivated">#FF9C46</item>
+    </style>
+    <!--    ***********************TextView White ************************-->
+    <style name="text_white_light_10" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:fontFamily">@font/poppins_light</item>
+    </style>
+
+    <style name="text_white_light_12" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/poppins_light</item>
+    </style>
+
+    <style name="text_white_light_14" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/poppins_light</item>
+    </style>
+
+    <style name="text_white_light_16" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/poppins_light</item>
+    </style>
+
+    <style name="text_white_light_18" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/poppins_light</item>
+    </style>
+
+    <style name="text_white_light_20" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">@font/poppins_light</item>
+    </style>
+
+    <style name="text_white_regular_10" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+    </style>
+
+    <style name="text_white_regular_12" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+    </style>
+
+    <style name="text_white_regular_14" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+    </style>
+
+
+    <style name="text_white_regular_16" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+    </style>
+
+    <style name="text_white_regular_18" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+    </style>
+
+    <style name="text_white_regular_20" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+    </style>
+
+    <style name="text_white_medium_10" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+    </style>
+
+    <style name="text_white_medium_12" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+    </style>
+
+    <style name="text_white_medium_14" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+    </style>
+
+    <style name="text_white_medium_16" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+    </style>
+
+    <style name="text_white_medium_18" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+    </style>
+
+    <style name="text_white_medium_20" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+    </style>
+
+    <style name="text_white_simibold_10" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+    </style>
+
+    <style name="text_white_simibold_12" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+    </style>
+
+    <style name="text_white_simibold_14" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+    </style>
+
+    <style name="text_white_simibold_16" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+    </style>
+
+    <style name="text_white_simibold_18" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+    </style>
+
+    <style name="text_white_simibold_20" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+    </style>
+
+    <style name="text_white_bold_10" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+    </style>
+
+    <style name="text_white_bold_12" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+    </style>
+
+    <style name="text_white_bold_14" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+    </style>
+
+    <style name="text_white_bold_16" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+    </style>
+
+    <style name="text_white_bold_18" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+    </style>
+
+    <style name="text_white_bold_20" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+    </style>
+
+    <style name="text_white_bold_22" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+    </style>
+
+    <style name="text_white_bold_24" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+    </style>
+
+    <style name="text_white_bold_26" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">26sp</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+    </style>
+
+    <style name="text_white_bold_28" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+    </style>
+
+    <style name="text_white_bold_30" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+    </style>
+    <!--    ***********************TextView Black ************************-->
+    <style name="text_black_app_light_10" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/black_app</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:fontFamily">@font/poppins_light</item>
+    </style>
+
+    <style name="text_black_app_light_12" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/black_app</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/poppins_light</item>
+    </style>
+
+    <style name="text_black_app_light_14" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/black_app</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/poppins_light</item>
+    </style>
+
+    <style name="text_black_app_light_16" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/black_app</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/poppins_light</item>
+    </style>
+
+    <style name="text_black_app_light_18" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/black_app</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/poppins_light</item>
+    </style>
+
+    <style name="text_black_app_light_20" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/black_app</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">@font/poppins_light</item>
+    </style>
+
+    <style name="text_black_app_regular_10" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/black_app</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+    </style>
+
+    <style name="text_black_app_regular_12" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/black_app</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+    </style>
+
+    <style name="text_black_app_regular_14" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/black_app</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+    </style>
+
+
+    <style name="text_black_app_regular_16" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/black_app</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+    </style>
+
+    <style name="text_black_app_regular_18" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/black_app</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+    </style>
+
+    <style name="text_black_app_regular_20" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/black_app</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+    </style>
+
+    <style name="text_black_app_medium_10" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/black_app</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+    </style>
+
+    <style name="text_black_app_medium_12" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/black_app</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+    </style>
+
+    <style name="text_black_app_medium_14" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/black_app</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+    </style>
+
+    <style name="text_black_app_medium_16" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/black_app</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+    </style>
+
+    <style name="text_black_app_medium_18" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/black_app</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+    </style>
+
+    <style name="text_black_app_medium_20" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/black_app</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+    </style>
+
+    <style name="text_black_app_simibold_10" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/black_app</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+    </style>
+
+    <style name="text_black_app_simibold_12" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/black_app</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+    </style>
+
+    <style name="text_black_app_simibold_14" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/black_app</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+    </style>
+
+    <style name="text_black_app_simibold_16" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/black_app</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+    </style>
+
+    <style name="text_black_app_simibold_18" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/black_app</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+    </style>
+
+    <style name="text_black_app_simibold_20" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/black_app</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+    </style>
+
+    <style name="text_black_app_bold_10" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/black_app</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+    </style>
+
+    <style name="text_black_app_bold_12" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/black_app</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+    </style>
+
+    <style name="text_black_app_bold_14" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/black_app</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+    </style>
+
+    <style name="text_black_app_bold_16" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/black_app</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+    </style>
+
+    <style name="text_black_app_bold_18" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/black_app</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+    </style>
+
+    <style name="text_black_app_bold_20" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/black_app</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+    </style>
+
+    <style name="text_black_app_bold_22" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/black_app</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+    </style>
+
+    <style name="text_black_app_bold_24" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/black_app</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+    </style>
+
+    <style name="text_black_app_bold_26" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/black_app</item>
+        <item name="android:textSize">26sp</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+    </style>
+
+    <style name="text_black_app_bold_28" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/black_app</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+    </style>
+
+    <style name="text_black_app_bold_30" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/black_app</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+    </style>
+
+       <!--    ***********************TextView Yellow ************************-->
+    <style name="text_yellow_light_10" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/main_color</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:fontFamily">@font/poppins_light</item>
+    </style>
+
+    <style name="text_yellow_light_12" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/main_color</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/poppins_light</item>
+    </style>
+
+    <style name="text_yellow_light_14" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/main_color</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/poppins_light</item>
+    </style>
+
+    <style name="text_yellow_light_16" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/main_color</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/poppins_light</item>
+    </style>
+
+    <style name="text_yellow_light_18" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/main_color</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/poppins_light</item>
+    </style>
+
+    <style name="text_yellow_light_20" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/main_color</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">@font/poppins_light</item>
+    </style>
+
+    <style name="text_yellow_regular_10" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/main_color</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+    </style>
+
+    <style name="text_yellow_regular_12" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/main_color</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+    </style>
+
+    <style name="text_yellow_regular_14" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/main_color</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+    </style>
+
+
+    <style name="text_yellow_regular_16" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/main_color</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+    </style>
+
+    <style name="text_yellow_regular_18" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/main_color</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+    </style>
+
+    <style name="text_yellow_regular_20" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/main_color</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+    </style>
+
+    <style name="text_yellow_medium_10" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/main_color</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+    </style>
+
+    <style name="text_yellow_medium_12" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/main_color</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+    </style>
+
+    <style name="text_yellow_medium_14" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/main_color</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+    </style>
+
+    <style name="text_yellow_medium_16" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/main_color</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+    </style>
+
+    <style name="text_yellow_medium_18" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/main_color</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+    </style>
+
+    <style name="text_yellow_medium_20" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/main_color</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+    </style>
+
+    <style name="text_yellow_simibold_10" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/main_color</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+    </style>
+
+    <style name="text_yellow_simibold_12" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/main_color</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+    </style>
+
+    <style name="text_yellow_simibold_14" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/main_color</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+    </style>
+
+    <style name="text_yellow_simibold_16" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/main_color</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+    </style>
+
+    <style name="text_yellow_simibold_18" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/main_color</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+    </style>
+
+    <style name="text_yellow_simibold_20" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/main_color</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+    </style>
+
+    <style name="text_yellow_bold_10" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/main_color</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+    </style>
+
+    <style name="text_yellow_bold_12" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/main_color</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+    </style>
+
+    <style name="text_yellow_bold_14" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/main_color</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+    </style>
+
+    <style name="text_yellow_bold_16" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/main_color</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+    </style>
+
+    <style name="text_yellow_bold_18" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/main_color</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+    </style>
+
+    <style name="text_yellow_bold_20" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/main_color</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+    </style>
+
+    <style name="text_yellow_bold_22" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/main_color</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+    </style>
+
+    <style name="text_yellow_bold_24" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/main_color</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+    </style>
+
+    <style name="text_yellow_bold_26" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/main_color</item>
+        <item name="android:textSize">26sp</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+    </style>
+
+    <style name="text_yellow_bold_28" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/main_color</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+    </style>
+
+    <style name="text_yellow_bold_30" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/main_color</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+    </style>
+
+
+
+</resources>

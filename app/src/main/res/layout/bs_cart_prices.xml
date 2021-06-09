@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bg_req_black_r12top"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/_20dp"
+    app:layout_behavior="@string/bottom_sheet_behavior">
+
+    <View
+        android:layout_width="@dimen/_50dp"
+        android:layout_height="@dimen/_6dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_12dp"
+        android:background="@drawable/bg_req_gray55_r4" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sub_total"
+            style="@style/text_gray90_medium_12"/>
+        <Space
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/subTotalTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3500 SAR"
+            style="@style/text_yellow_medium_12"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_12dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/discount"
+            style="@style/text_gray90_medium_12"/>
+        <Space
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/discountPercentTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10%"
+            style="@style/text_yellow_medium_12"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="("
+            android:layout_marginStart="@dimen/_5dp"
+            style="@style/text_yellow_medium_12"/>
+        <TextView
+            android:id="@+id/discountAmountTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3500 SAR"
+            android:layout_marginHorizontal="@dimen/_2dp"
+            style="@style/text_yellow_medium_12"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=")"
+            style="@style/text_yellow_medium_12"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_12dp">
+        <TextView
+            android:id="@+id/vatPercentTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="%15"
+            style="@style/text_gray90_medium_12"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VAT"
+            android:layout_marginStart="5dp"
+            style="@style/text_gray90_medium_12"/>
+        <Space
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/vatAmountTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3500 SAR"
+            style="@style/text_yellow_medium_12"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_12dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/delivery"
+            style="@style/text_gray90_medium_12"/>
+        <Space
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/deliveryTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3500 SAR"
+            style="@style/text_yellow_medium_12"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1dp"
+        android:background="@color/gray65"
+        android:layout_marginTop="@dimen/_12dp"
+        android:layout_marginBottom="@dimen/_12dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total"
+        style="@style/text_white_regular_12"/>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/totalTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3500 SAR"
+            style="@style/text_yellow_medium_14"
+            android:drawablePadding="@dimen/_8dp"
+            app:drawableStartCompat="@drawable/ic_money"
+            android:drawableTint="@color/main_color"
+            tools:ignore="UseCompatTextViewDrawableXml"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+        <TextView
+            android:id="@+id/oldTotalTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9500 SAR"
+            style="@style/text_gray90_medium_14"
+            tools:ignore="UseCompatTextViewDrawableXml"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/totalTv"
+            android:layout_marginStart="@dimen/_8dp"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0.7dp"
+            android:background="@color/gray90"
+            app:layout_constraintTop_toTopOf="@id/oldTotalTv"
+            app:layout_constraintBottom_toBottomOf="@id/oldTotalTv"
+            app:layout_constraintStart_toStartOf="@id/oldTotalTv"
+            app:layout_constraintEnd_toEndOf="@id/oldTotalTv"
+            android:layout_marginBottom="@dimen/_4dp"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_16dp"
+        android:button="@drawable/button_box_black"
+        android:text="@string/by_clicking_confirm_order_you_agree_our"
+        style="@style/text_gray90_regular_12"
+        android:paddingStart="8dp"
+        android:layout_marginTop="@dimen/_12dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_24dp"
+        android:layout_marginTop="@dimen/_5dp">
+
+        <TextView
+            style="@style/text_yellow_simibold_12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/terms_and_conditions" />
+
+        <TextView
+            style="@style/text_gray90_regular_12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_4dp"
+            android:text="@string/and" />
+
+        <TextView
+            style="@style/text_yellow_simibold_12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_4dp"
+            android:text="@string/privacy_policy" />
+
+    </LinearLayout>
+
+
+
+    <android.widget.Button
+        android:id="@+id/cancelBtn"
+        style="@style/text_black_app_regular_16"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45dp"
+        android:layout_marginTop="@dimen/_20dp"
+        android:layout_marginBottom="@dimen/_30dp"
+        android:background="@drawable/bg_btn_main"
+        android:text="@string/confirm"
+        android:textAllCaps="false" />
+</LinearLayout>
